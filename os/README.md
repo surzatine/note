@@ -278,9 +278,9 @@ together control the operation of a computer system.
 >`. Micro Kernel`
 It is kernel types which has minimalist approach.
 Ex: Mach, L4, AmigaOS, Minix, K42 etc.
->
-> ![[kernel_types.jpg]]
->
+
+![[kernel_types.jpg]]
+
 >`. Hybrid Kernel`
 >It is the combination of both monolithic kernel and microkernel. It has speed and design of monolithic kernel and modularity and stability of microkernel.
 > Ex: Windows NT, Netware, BeOS etc.
