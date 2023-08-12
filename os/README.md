@@ -255,7 +255,8 @@ together control the operation of a computer system.
 `2.2.` Layered System
 
 > Layered Structure is a type of system structure in which the different services of the operating system are split into various layers, where each layer has a specific well-defined task to perform.
-![[layered_os.jpg]]
+
+![](layered_os.jpg)
 
 `2.3.` Kernel
 
@@ -278,9 +279,9 @@ together control the operation of a computer system.
 >`. Micro Kernel`
 It is kernel types which has minimalist approach.
 Ex: Mach, L4, AmigaOS, Minix, K42 etc.
-
-![[kernel_types.jpg]]
-
+>
+> ![](kernel_types.jpg)
+>
 >`. Hybrid Kernel`
 >It is the combination of both monolithic kernel and microkernel. It has speed and design of monolithic kernel and modularity and stability of microkernel.
 > Ex: Windows NT, Netware, BeOS etc.
@@ -288,29 +289,29 @@ Ex: Mach, L4, AmigaOS, Minix, K42 etc.
 **System Call**
 
 >A system call is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on.
-![[system_call.jpg]]
+![](system_call.jpg)
 
 **System Program**
 
 >System Programming can be defined as the act of building Systems Software using System Programming Languages.
-![[system_program.jpg]]
+![](system_program.jpg)
 
 `2.5.` Client-Server Model
 
 >The Client-server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients
-![[client_server.jpg]]
+![](client_server.jpg]
 
 
 
 `2.6.` Virtual Machines
 
 >Virtual Machine abstracts the hardware of our personal computer such as CPU, disk drives, memory, NIC (Network Interface Card) etc, into many different execution environments as per our requirements, hence giving us a feel that each execution environment is a single computer.
-![[virtual_machine.jpg]]
+![](virtual_machine.jpg)
 
 `2.7.` Shell
 
 >A shell is a special user program that provides an interface for the user to use operating system services.
-![[shell.jpg]]
+![](shell.jpg)
 
 
 # 3. Process Management 
@@ -324,34 +325,34 @@ Ex: Mach, L4, AmigaOS, Minix, K42 etc.
 	Activities: Process
 
 `3.1.2.` The Process Model
-![[process_model.jpg]]
+![](process_model.jpg)
 
 
 `3.1.3.` Process States
 `3.1.4.` Process State Transition
 
-![[process_queue.png]]
+![](process_queue.png)
 
 `3.1.5.` The Process Control Block
-![[process_control_block.png]]
-![[context_switching.png]]
+![](process_control_block.png)
+![](context_switching.png)
 
 `3.1.6.` Operations on Processes (Creation, Termination, Hierarchies, Implementation)
 `3.1.7.` Cooperating Processes
 `3.1.8.` System Calls (Process Management, File Management, Directory Management)
 
 > A system call is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on.
-![[system_call.jpg]]
+![](system_call.jpg)
   
 #### 3.2. Threads: 
 `3.2.1.` Definitions of Threads
 
 >Thread is light weight process.
 > Ex: Checking spelling typing in Word.
-  ![[user_vs_kernel_thread.png]]
+  ![](user_vs_kernel_thread.png)
   
 `3.2.2.` Types Of Thread Process(Single and Multi-threaded Process)
-![[threading.png]]
+![](threading.png)
 
 `3.2.3.` Benefits of Multi-thread
 `3.2.4.` Multi-threading Models (Many-to-One-Model, One-to-One Model, Many-to-Many Model)
@@ -364,7 +365,7 @@ Process created:
 > - Executing program
 > - Subprocess
 > - Daemon Email, Printer
-![[interprocess_communication.png]]
+![](interprocess_communication.png)
 
 `3.3.2.` Race Condition
 
@@ -374,7 +375,7 @@ Ex: Writing two data in one file.
 `3.3.3.` Critical Regions
 
 > A part of program where shared resource is accessed is called Critical Section.
-![[critical_section.png]]
+![](critical_section.png)
 
 `3.3.4.` Avoiding Critical Region: Mutual Exclusion And Serializability
 
@@ -388,8 +389,8 @@ Ex: Writing two data in one file.
 `3.3.5.` Mutual Exclusion Conditions
 
 > Way of making sure that if one process is using a shared variable or file; the other process will be excluded (stop) from doing the same thing.
-![[mutual_exclusion.png]]
-![[mutual_exclusion_algorithm.jpg]]
+![](mutual_exclusion.png)
+![](mutual_exclusion_algorithm.jpg)
 
 `3.3.6.` Proposals for Achieving Mutual Exclusion
 
@@ -401,7 +402,7 @@ Ex: Writing two data in one file.
 	. A process must not be indefinitely postponed from entering its critical section.
 
 `3.3.7.` Disabling Interrupts
-![[disable_lock.png]]
+![](disable_lock.png)
 
 `3.3.8.` Lock Variable
 
@@ -409,7 +410,7 @@ Ex: Writing two data in one file.
 
 
 `3.3.9.` The #TSL ==(Test and Set Lock)== Instruction 
-![[test_and_set_lock.png]]
+![](test_and_set_lock.png)
 
 - [ ] Lock
 
@@ -418,7 +419,7 @@ Ex: Writing two data in one file.
 
 
 `3.3.10.` Strict Alteration (Peterson's Solution)
-![[strict_alteration.png]]
+![](strict_alteration.png)
 - [ ] Flag Turn: I
 - [ ] Flag Turn: J
 
@@ -463,7 +464,7 @@ Ex: Writing two data in one file.
 	signal(semaphore S){
 	S++;
 	}
-![[semaphore.png]]
+![](semaphore.png)
 
 *Monitor*
 
@@ -472,7 +473,7 @@ Ex: Writing two data in one file.
 	 Producer: produce
 	 Consumer: wait if counter == 0 & consume if counter > 0
  
-![[monitor.png]]
+![](monitor.png)
 
 `3.3.13.` Serializability: Locking Protocols and Time Stamp Protocols
 
@@ -506,7 +507,7 @@ Ex: Writing two data in one file.
 
 *Dining Philosopher Problem*
 >The Dining Philosopher Problem states that K philosophers are seated around a circular table with one chopstick between each pair of philosophers. There is one chopstick between each philosopher. A philosopher may eat if he can pick up the two chopsticks adjacent to him. One chopstick may be picked up by any one of its adjacent followers but not both.
-![[dining_pholosopher.png]]
+![](dining_pholosopher.png)
 
 	process P[i]
 	while true do{
@@ -546,11 +547,11 @@ Ex: Writing two data in one file.
 	}while(True);
 
 *Sleeping Barber*
-![[sleeping_barber.png]]
+![](sleeping_barber.png)
 
 #### 3.4. Process Scheduling: 
 `3.4.1.` Basic Concept
-![[schedules.png]]
+![](schedules.png)
 
 `3.4.2.` Type of Scheduling (Preemptive Scheduling, Non-preemptive Scheduling, Batch, Interactive, Real Time Scheduling)
 
@@ -581,18 +582,18 @@ Ex: Writing two data in one file.
 | P2      | 3            | 2         |
 | P3      | 5            | 4         |
 
-![[round_robin.jpg]]
+![](round_robin.jpg)
 
 `3.4.5.` Some Numerical Examples on Scheduling.
 
 *FCFS (First Come First Served)*
-![[first_come_first_served.png]]
+![](first_come_first_served.png)
 
 *SJF (Short Job First) / SPN (Short Process Next)*
-![[short_job_first.png]]
+![](short_job_first.png)
 
 *SRTN (Short Remaining Time Next) / SRTF (Short Remaining Time First)*
-![[short_remaining_time_next.png]]
+![](short_remaining_time_next.png)
 
 *HRN (Highest Response Next)*
 
@@ -605,8 +606,8 @@ Ex: Writing two data in one file.
 *teaching hours: 4 hrs*
   
 `4.1.` System Model
-![[deadlock.jpg]]
-![[deadlock_request_allocate.jpg]]
+![](deadlock.jpg)
+![](deadlock_request_allocate.jpg)
 
 `4.2.` System Resources: Premptable and Non-Preemptable
 
@@ -679,11 +680,11 @@ Ex: Writing two data in one file.
 `5.1.1.` Introduction
 
 `5.1.2.` Memory Hierarchy
-![[memory_hierarchy.png]]
+![](memory_hierarchy.png)
 
 `5.1.3.` Logical Versus Physical Address Space
-![[logical_vs_physical_address.webp]]
-![[diff_logical_vs_physical_address.jpg]]
+![](logical_vs_physical_address.webp)
+![](diff_logical_vs_physical_address.jpg)
 
 *Memory Abstraction*
 
@@ -697,8 +698,8 @@ Ex: Writing two data in one file.
 
 
 `5.1.4.` Memory Management with Swapping: Memory Management with Bitmaps and with Linked List
-![[bit_map.png]]
-![[linked_list.jpg]]
+![](bit_map.png)
+![](linked_list.jpg)
 
 `5.1.5.` Memory Management without Swapping
 
@@ -772,18 +773,18 @@ Ex: Writing two data in one file.
 `5.2.11.` Page Replacement Algorithms: #FIFO==First-In-First-Out==, #OPR==Optimal Page Request==, #LRU==Least Recently Used==, #SCP==Second Chance Page Request==
 
 *First In First Out*
-![[first_in_first_out.png]]
+![](first_in_first_out.png)
 
 *Optimal Page Replacement*
-![[optimal_page_replacement.png]]
+![](optimal_page_replacement.png)
 
 *Least Recently Used*
 `Hit: 12`
-![[least_recently_used.png]]
+![](least_recently_used.png)
 
 
 *Second Chance Page Replacement*
-![[second_chance_page_rep.png]]
+![](second_chance_page_rep.png)
 
 `5.2.12.` Some Numerical Examples on Page Replacement
 
@@ -794,7 +795,7 @@ Ex: Writing two data in one file.
 > It is a memory management technique in which the memory is divided into variable size partition.
 
 `5.2.15. `Segmentation With Paging.
-![[segmentation_paging.jpg]]
+![](segmentation_paging.jpg)
 
 
 
@@ -811,7 +812,7 @@ Ex: Writing two data in one file.
 
 `6.5.` Direct Memory Access #DMA
 >It is a method of transferring data from the computer RAM to another part of computer without processing using CPU.
-![[Direct_memory_access.png]]
+![](Direct_memory_access.png)
 
 `6.6.` Principle of I/O Software
 
@@ -831,16 +832,16 @@ Ex: Writing two data in one file.
 `6.8.` Program I/O, Interrupt - Driven I/O, I/O Using DMA #DMA
 
 *Programmed I/O*
-![[programmed_IO.png]]
+![](programmed_IO.png)
 
 *Interruped I/O*
-![[interruped_IO.png]]
+![](interruped_IO.png)
 
 *DMA*
-![[DMA_IO.png]]
+![](DMA_IO.png)
 
 `6.9.` I/O Software Layers
-![[IO_layer.png]]
+![](IO_layer.png)
 
 `6.10.` Interrupts Handler
 `6.11.` Device Drivers
@@ -924,7 +925,7 @@ Ex: Writing two data in one file.
 | file C | 28          | 2      |
 
 	linked list
-![[linked_list_file.jpg]]
+![](linked_list_file.jpg)
 
 	Index Allocation
 
@@ -997,7 +998,7 @@ Ex: Writing two data in one file.
 *teaching hours: 4 hrs*
   
 `8.1.` Introduction
-![[distributed_os.jpg]]
+![](distributed_os.jpg)
 
 `8.2.` Advantages of Distributed System over Centralized System
 `8.3.` Advantages of Distributed System over Independent PCs
@@ -1022,29 +1023,5 @@ Ex: Writing two data in one file.
 
 	- internal and external clock synchronization
 	- centralized and distributed clock distribution
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
